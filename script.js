@@ -11,11 +11,11 @@ function setDate(){
 
 
     const mins = now.getMinutes();
-    const minDegrees =((mins/60)*360)+((seconds/60)*6)+90;
+    const minDegrees =((mins/60)*360)+90;
     minuteHand.style.transform=`rotate(${minuteHand}deg)`;
 
     const hours = now.getHours();
-    const hourDegrees = ((hours / 12) * 360) + ((mins/60)*30) + 90;
+    const hourDegrees = ((mins / 12) * 360)+ 90;
     hourHand.style.transform=`rotate(${hourDegrees}deg)`;
 }
 
